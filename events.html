@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/events.css" />
+
+    <title>SEEK - Events</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="./index.html"> S E E K </a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="./about-us.html">About Us</a>
+          </li>
+          
+
+          <li class="btn-search">
+            <a href="./index.html">S E A R C H &nbsp; E V E N T S</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
-        <p>Enter the city: <input id="events1" class="storageInput"/></p>
-        <button id="submit" class="searchBtn">Search</button>
-  
-        <section class="events bg-events">
-          <div id="cards"></div>
-          <div id="weather">
-            <div class="card weather-card">
-              <div class="card-content weather-box">
-                <div class="content">
-                  <p class="title is-4 cityName">City Name</p>
-                  <div class="col card-item">
-                    <h3 class="currentDate"></h3>
-                    <div class="temp">
-                      <i class="fas fa-temperature-low"></i> Temperature:
-                    </div>
-                    <div class="humidity"> 
-                      <i class="fas fa-tint"></i> Humidity:
-                    </div>
-                </div>
+      <p>Enter the city: <input id="events1" class="storageInput"/></p>
+      <button id="submit" class="searchBtn">Search</button>
+
+      <section class="events bg-events">
+        <div id="cards"></div>
+        <div id="weather">
+          <div class="card weather-card">
+            <div class="card-content weather-box">
+              <div class="content">
+                <p class="title is-4 cityName">City Name</p>
+                <div class="col card-item">
+                  <h3 class="currentDate"></h3>
+                  <div class="temp">
+                    <i class="fas fa-temperature-low"></i> Temperature:
+                  </div>
+                  <div class="humidity"> 
+                    <i class="fas fa-tint"></i> Humidity:
+                  </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer>Copyright &copy; 2021 - All rights reserved.</footer>
+    <footer>Copyright &copy; 2021 - All rights reserved.</footer>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <script src="./assets/js/script.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
