@@ -7,6 +7,30 @@
     <title>Events</title>
 </head>
 <body>
-    
+    <main>
+        <p>Enter the city: <input id="events1" class="storageInput"/></p>
+        <button id="submit" class="searchBtn">Search</button>
+  
+        <section class="events bg-events">
+          <div id="cards"></div>
+          <div id="weather">
+            <div class="card weather-card">
+              <div class="card-content weather-box">
+                <div class="content">
+                  <p class="title is-4 cityName">City Name</p>
+                  <div class="col card-item">
+                    <h3 class="currentDate"></h3>
+                    <div class="temp">
+                      <i class="fas fa-temperature-low"></i> Temperature:
+                    </div>
+                    <div class="humidity"> 
+                      <i class="fas fa-tint"></i> Humidity:
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 </body>
 </html>
