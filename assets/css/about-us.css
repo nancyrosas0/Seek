@@ -1,0 +1,48 @@
+.bg-img {
+  background-image: url("../images/bg-events.png");
+}
+
+.about-us {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
+    0 0 0 1px rgb(10 10 10 / 2%);
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+  margin: 100px 20px;
+  opacity: 0.8;
+}
+
+#about-us {
+  display: flex;
+}
+
+.bio-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.bio-img img {
+  border-radius: 50%;
+}
+
+.bio-text {
+  margin: 15px;
+}
+
+.sub-bio {
+  text-align: right;
+}
+
+.title {
+  margin: 20px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
