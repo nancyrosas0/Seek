@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sought</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Train+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>SEEK</title>
+
+  </head>
+
+  <body id="home-page">
+    <header>
+      <section class="hero is-medium">
+        <img class="back-img image" src="./assets/images/bg-index.jpeg" />
+        <div class="centered title-container">
+          <div>
+          <h1 class="main-title">SEEK</h1> 
+          <h2 class="subtitle">Where will the night take you?</h2>
+        </div>
+             <div class="columns">
+              <div class="column is-half" id="city-text">
+                Enter Your City: 
+                <br>
+                <input id="events" class="searchInput" placeholder="ex. San Antonio" /> 
+                <button id="submit-hp"> Search</button>
+                </div>
+              </div>
+           
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- <div>
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                Based on the blood, sweat, and googling of Team 16.
+              </p>
+            </div>
+          </footer>
+    </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/events.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>  
 </html>
