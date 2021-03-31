@@ -99,3 +99,9 @@
     padding: 10px;
     text-align: center;
   }
+
+
+  .swal-overlay {
+    background-color: rgba(250, 247, 201, 0.2);
+  }
+  

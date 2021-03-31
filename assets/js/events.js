@@ -20,6 +20,11 @@ $(document).ready(function () {
   // add on click event for event button search
 
   $("#submit-hp").on("click", function (e) {
+    if ($("#events").val() == "") {
+      swal("Please enter a valid city before proceeding");
+      return false;
+    }
+
     e.preventDefault();
 
     localStorage.setItem(
