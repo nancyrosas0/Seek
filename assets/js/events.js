@@ -87,11 +87,7 @@ $(document).ready(function () {
                       <br />
                     </div>
                   </div>
-          
-             
-                   
-          
-                    
+
                     </section>
     
                     <section class="test2">
