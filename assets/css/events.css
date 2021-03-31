@@ -109,6 +109,10 @@ nav ul li a:hover {
   /* margin-bottom: 15px; */
 }
 
+.content {
+  font-size: 20px;
+}
+
 .image.is-48x48 {
   width: 190px;
 }

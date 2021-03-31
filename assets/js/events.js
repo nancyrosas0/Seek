@@ -62,7 +62,6 @@ $(document).ready(function () {
         // for loop through 5 events per time
         var events = json._embedded.events;
         for (var i = 0; i < events.length; i++) {
-          console.log(i);
           // create cards dynamically
           var cards = $(`
             <div class="columns">
