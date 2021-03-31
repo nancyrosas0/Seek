@@ -20,12 +20,11 @@ $(document).ready(function () {
   // add on click event for event button search
 
   $("#submit-hp").on("click", function (e) {
+    e.preventDefault();
     if ($("#events").val() == "") {
       swal("Please enter a valid city before proceeding");
       return false;
     }
-
-    e.preventDefault();
 
     localStorage.setItem(
       "homepage-city",
@@ -38,6 +37,8 @@ $(document).ready(function () {
   $("#submit").on("click", function () {
     var city = $("#events1").val();
     //   $("#submit").load("events.html");
+    $("#cards").empty();
+
     apiCall(city);
   });
 
@@ -48,15 +49,20 @@ $(document).ready(function () {
       url:
         "https://app.ticketmaster.com/discovery/v2/events.json?city=" +
         city +
-        "&size=20&apikey=hTQelPqAC1V3ziATGBzhiGUioXfc5fbi",
+        "&size=20&sort=date,name,asc&apikey=hTQelPqAC1V3ziATGBzhiGUioXfc5fbi",
       async: true,
       dataType: "json",
       success: function (json) {
         console.log(json);
+        if (json.page.totalElements == 0) {
+          swal("Please enter a valid city before proceeding");
+          return;
+        }
 
         // for loop through 5 events per time
         var events = json._embedded.events;
         for (var i = 0; i < events.length; i++) {
+          console.log(i);
           // create cards dynamically
           var cards = $(`
             <div class="columns">
@@ -76,9 +82,7 @@ $(document).ready(function () {
                     </div>
                     <div class="media-content">
                       <p class="title is-4">
-                        ${
-                          json._embedded.events[i]._embedded.attractions[0].name
-                        }   
+                        ${json._embedded.events[i].name}   
                         ${getTwitter(json, i)}
                     
                         ${getFacebook(json, i)}
@@ -136,7 +140,7 @@ $(document).ready(function () {
 
 function getTwitter(json, i) {
   if (
-    json?._embedded.events[i]?._embedded?.attractions[0]?.externalLinks
+    json?._embedded.events[i]?._embedded?.attractions?.[0]?.externalLinks
       ?.twitter?.[0]?.url
   ) {
     return `<a
@@ -149,7 +153,7 @@ function getTwitter(json, i) {
 
 function getHomepage(json, i) {
   if (
-    json?._embedded.events[i]?._embedded.attractions[0]?.externalLinks
+    json?._embedded.events[i]?._embedded.attractions?.[0]?.externalLinks
       ?.homepage?.[0]?.url
   ) {
     return `<a> <i>${json._embedded.events[i]._embedded.attractions[0].externalLinks.homepage[0].url} </i>
@@ -160,7 +164,7 @@ function getHomepage(json, i) {
 
 function getFacebook(json, i) {
   if (
-    json?._embedded.events[i]?._embedded?.attractions[0]?.externalLinks
+    json?._embedded.events[i]?._embedded?.attractions?.[0]?.externalLinks
       ?.facebook?.[0]?.url
   ) {
     return `<a
