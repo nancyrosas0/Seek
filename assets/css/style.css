@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(164, 167, 162);
+  }
+  .back-img {
+    background-position: 100px 5px;
+    padding: 0 0 0 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Train One", cursive;
+    font-size: 50px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: black 1px 1px;
+    width: 100%;
+  }
+  
+  #city-text {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  #events {
+    padding: 17px;
+    width: 50%;
+    margin: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #f6f4ac;
+    opacity: 0.9;
+  }
+  
+  #submit-hp {
+    padding: 14px;
+    width: 100px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #f6f4ac;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: 0.9;
+  }
+  
+  .main-title {
+    text-align: center;
+    font-size: 90px;
+    color: #f8de7e;
+    font-weight: 900;
+  }
+  
+  .subtitle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: #f8de7e;
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  .subtitle a {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Train One", cursive;
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: black 1px 1px;
+  }
+  
+  .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+    font-size: inherit;
+  }
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
