@@ -114,7 +114,7 @@ $(document).ready(function () {
                       ${json._embedded.events[i]._embedded.venues[0].name} 
                       <br>
                       <br>
-                      <a href="${json._embedded.events[i].url}"
+                      <a href="${json._embedded.events[i].url}" target="_blank"
                         ><strong>Click Here to Buy Tickets</strong></a
                       >
                       </p>
