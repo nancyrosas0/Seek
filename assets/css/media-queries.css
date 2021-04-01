@@ -53,6 +53,9 @@
     font-size: 15px;
     height: 300px;
   }
+  .events-line {
+    display: block;
+  }
 }
 
 /* MEDIA QUERY MAX-WIDTH 768px*/

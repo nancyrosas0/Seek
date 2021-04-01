@@ -100,6 +100,8 @@ $(document).ready(function () {
     
                     <section class="test2">
                     <p>
+                    <hr class="events-line" style="height:2px; width:75%; margin: 16px auto; border-width:0; background-color: #f9a602">
+
                       <strong>Date & Time</strong>
                       
                       <br>
