@@ -9,8 +9,7 @@ var tempEl = $(".temp");
 var humidityEl = $(".humidity");
 var today = moment().format("L");
 
-
-searchBtn.on("click", function(e) {
+searchBtn.on("click", function (e) {
   e.preventDefault();
   if (searchInput.val() === "") {
     alert("Please input City name");
