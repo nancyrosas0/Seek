@@ -1,4 +1,60 @@
+/* MEDIA QUERY MAX-WIDTH 1024px*/
+
+@media screen and (max-width: 1024px) {
+  /* events page */
+  .temp,
+  .humidity {
+    font-size: 18px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .test2 {
+    padding: 25px 10px;
+  }
+
+  /* about us page */
+
+  .about-us-title {
+    font-size: 16px;
+    height: 300px;
+  }
+}
+
 /* MEDIA QUERY MAX-WIDTH 950px*/
 
 @media screen and (max-width: 950px) {
+  /* events page */
+  .temp,
+  .humidity {
+    font-size: 16px;
+  }
+
+  .image img {
+    width: 85%;
+  }
+
+  .title.is-4 {
+    font-size: 27px;
+  }
+  .card {
+    flex-direction: column;
+  }
+
+  .card-content {
+    padding: 20px 15px 0 15px;
+  }
+
+  /* about us page */
+
+  .about-us-title {
+    font-size: 15px;
+    height: 300px;
+  }
 }
+
+/* MEDIA QUERY MAX-WIDTH 768px*/
+
+/* MEDIA QUERY MAX-WIDTH 575px*/
