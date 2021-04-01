@@ -74,12 +74,13 @@ body {
 
 .subtitle {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  color: #f8de7e;
-  font-size: 25px;
+  font-family: "blackangel", sans-serif;
+  font-weight: 590;
+  color: white;
+  font-size: 50px;
   margin-bottom: 50px;
 }
+
 .subtitle a {
   position: absolute;
   top: 25%;
