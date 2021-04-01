@@ -12,7 +12,7 @@ var today = moment().format("L");
 searchBtn.on("click", function (e) {
   e.preventDefault();
   if (searchInput.val() === "") {
-    alert("Please input City name");
+    swal("Please enter a valid city before proceeding");
     return;
   }
 
