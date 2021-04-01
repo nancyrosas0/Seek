@@ -1,6 +1,7 @@
 @font-face {
   font-family: "blackangel";
-  src: url("../fonts/blackangelotf.otf") format("opentype"), url("../fonts/blackangelttf.ttf")  format("truetype");
+  src: url("../fonts/blackangelotf.otf") format("opentype"),
+    url("../fonts/blackangelttf.ttf") format("truetype");
 }
 
 .bg-img {
@@ -25,8 +26,8 @@
   font-family: "blackangel", sans-serif;
   font-weight: 590;
   color: white;
-  font-size: 70px;
-  margin: 15px;
+  font-size: 80px;
+  margin: 0px;
 }
 #about-us {
   display: flex;
@@ -37,6 +38,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  text-align: center;
 }
 .bio-img img {
   border-radius: 50%;
@@ -51,7 +53,8 @@
 
 .sub-bio {
   text-align: right;
-  margin: 15px;
+  margin: 10px 5px 40px 5px;
+  color: #f8de7e;
 }
 
 .title {

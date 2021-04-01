@@ -55,19 +55,19 @@ nav ul li a:hover {
 }
 
 .btn-search a {
-  border: #f9a602 4px solid;
-  background-color: #f9a602;
+  border: #f8de7e 4px solid;
+  background-color: #f8de7e;
   border-radius: 25px;
   font-weight: 600;
   font-size: 14px;
-  color: #fff;
+  color: #333;
 }
 
 .btn-search a:hover {
-  border: #f8de7e 4px solid;
+  border: #f6f4ac 4px solid;
 
   color: #000;
-  background-color: #f8de7e;
+  background-color: #f6f4ac;
 }
 
 .card {
