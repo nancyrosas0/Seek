@@ -62,7 +62,6 @@ $(document).ready(function () {
         // for loop through 5 events per time
         var events = json._embedded.events;
         for (var i = 0; i < events.length; i++) {
-          console.log(i);
           // create cards dynamically
           var cards = $(`
             <div class="columns">
@@ -114,7 +113,7 @@ $(document).ready(function () {
                       ${json._embedded.events[i]._embedded.venues[0].name} 
                       <br>
                       <br>
-                      <a href="${json._embedded.events[i].url}"
+                      <a href="${json._embedded.events[i].url}" target="_blank"
                         ><strong>Click Here to Buy Tickets</strong></a
                       >
                       </p>

@@ -9,8 +9,7 @@ var tempEl = $(".temp");
 var humidityEl = $(".humidity");
 var today = moment().format("L");
 
-
-searchBtn.on("click", function(e) {
+searchBtn.on("click", function (e) {
   e.preventDefault();
   if (searchInput.val() === "") {
     alert("Please input City name");
@@ -23,6 +22,7 @@ searchBtn.on("click", function(e) {
 function renderWeatherData(cityName, cityTemp, cityHumidity, cityWeatherIcon) {
   cityNameEl.text(cityName);
   currentDateEl.text(`${today}`);
+
   tempEl.text(`Temperature: ${cityTemp} °F`);
   humidityEl.text(`Humidity: ${cityHumidity}%`);
   weatherIconEl.attr("src", cityWeatherIcon);

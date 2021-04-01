@@ -26,6 +26,8 @@
   </head>
   <body>
     <header>
+      <div class="header-div">
+        <div class="header-bg"></div>
       <h1>
         <a href="./index.html"> S E E K </a>
       </h1>
@@ -34,17 +36,19 @@
           <li>
             <a href="./about-us.html">About Us</a>
           </li>
-          
-
-          <li class="btn-search">
-            <a href="./index.html">S E A R C H &nbsp; E V E N T S</a>
-          </li>
         </ul>
       </nav>
+      <p id="btn-text">Enter the city: </p>
+      <div class="input-centered">
+        <input id="events1" class="storageInput" placeholder="ex. San Antonio"/>
+      </div>
+      <div class="btn-search">
+      <button id="submit" class="searchBtn">Search</button>
+    </div>
+  </div>
     </header>
     <main>
-      <p>Enter the city: <input id="events1" class="storageInput"/></p>
-      <button id="submit" class="searchBtn">Search</button>
+
 
       <section class="events bg-events">
         <div id="cards"></div>
