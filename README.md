@@ -59,10 +59,11 @@ Error message if no valid input
 
 
 Events - lists of events from ticketmaster and today's weather
+![image](https://user-images.githubusercontent.com/76980137/113413930-61742d00-9381-11eb-9a1c-daa763148163.png)
 ![image](https://user-images.githubusercontent.com/76980137/113413515-7ef4c700-9380-11eb-93a1-1fd38e890776.png)
 
 
-About Me - bios of the contributors with links to GitHub and LinkedIn
+About Me - bios of the contributors with links to GitHub and LinkedIn, SEEK logo is a return to Homepage
 ![image](https://user-images.githubusercontent.com/76980137/113413777-0b06ee80-9381-11eb-9bb9-7746942c2ac7.png)
 
 
