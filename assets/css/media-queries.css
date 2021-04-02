@@ -48,11 +48,11 @@
 
 @media screen and (max-width: 950px) {
   /* events page */
+
   .temp,
   .humidity {
     font-size: 16px;
   }
-
   .image img {
     width: 85%;
   }
@@ -68,25 +68,15 @@
     padding: 20px 15px 0 15px;
   }
 
-  /* about us page */
-
-  .about-us-title {
-    font-size: 15px;
-    height: 350px;
-  }
-  .events-line {
-    display: block;
-  }
-}
-
-/* MEDIA QUERY MAX-WIDTH 768px*/
-@media screen and (max-width: 768px) {
-  /* events page */
   .weather-card {
     position: relative;
     width: 50%;
     text-align: center;
     margin: auto;
+  }
+
+  .events-line {
+    display: block;
   }
 
   .bg-events {
@@ -107,4 +97,82 @@
     height: 120px;
   }
 }
+
+/* MEDIA QUERY MAX-WIDTH 768px*/
+@media screen and (max-width: 768px) {
+  /* events page */
+
+  .back-img {
+    height: 500px;
+  }
+
+  .title.is-4 {
+    font-size: 25px;
+  }
+
+  .content {
+    font-size: 20px;
+  }
+
+  /* about us page */
+  .about-us .title {
+    height: 135px;
+  }
+}
 /* MEDIA QUERY MAX-WIDTH 575px*/
+
+@media screen and (max-width: 575px) {
+  /*homepage  */
+  .main-title {
+    font-size: 70px;
+  }
+
+  .subtitle {
+    font-size: 35px;
+  }
+
+  #events {
+    margin: 5px;
+  }
+
+  #submit-hp {
+    font-size: 14px;
+    width: 90px;
+  }
+
+  #city-text {
+    font-size: 20px;
+  }
+
+  /* events page */
+
+  .weather-card {
+    width: 90%;
+  }
+
+  .image.is-48x48 {
+    width: 65%;
+    margin: auto;
+  }
+
+  .image img {
+    width: 100%;
+    margin: auto;
+  }
+  .media {
+    flex-direction: column;
+  }
+
+  .media-left {
+    width: 100%;
+  }
+  .title.is-4 {
+    text-align: center;
+  }
+
+  .media-content {
+    width: 100%;
+    margin-top: 200px;
+    text-align: center;
+  }
+}
