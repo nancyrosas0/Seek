@@ -41,6 +41,10 @@
     padding: 30px 10px;
   }
 
+  .title.is-4 {
+    font-size: 26px;
+  }
+
   /* about us page */
 
   .about-us-title {
