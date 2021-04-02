@@ -49,10 +49,9 @@ Homepage
 
 SEEK
 Where will the night take you?
-Enter Your City:
-
-ex. San Antonio
+Enter Your City:ex. San Antonio
  Search![image](https://user-images.githubusercontent.com/76980137/113413380-30472d00-9380-11eb-818e-34288b935dab.png)
+
 
 Error message if no valid input
 ![image](https://user-images.githubusercontent.com/76980137/113413457-5ec50800-9380-11eb-8ff2-9f2e3d961e03.png)
@@ -60,12 +59,11 @@ Error message if no valid input
 
 
 Events - lists of events from ticketmaster and today's weather
-
 ![image](https://user-images.githubusercontent.com/76980137/113413515-7ef4c700-9380-11eb-93a1-1fd38e890776.png)
 
 
 About Me - bios of the contributors with links to GitHub and LinkedIn
+![image](https://user-images.githubusercontent.com/76980137/113413777-0b06ee80-9381-11eb-9bb9-7746942c2ac7.png)
 
-Follow on LinkedIn![image](https://user-images.githubusercontent.com/76980137/113413602-a77cc100-9380-11eb-95f0-4b7db3bbb2d8.png)
 
 
