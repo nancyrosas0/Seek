@@ -60,6 +60,7 @@ Error message if no valid input
 
 Events - lists of events from ticketmaster and today's weather
 ![image](https://user-images.githubusercontent.com/76980137/113413930-61742d00-9381-11eb-9a1c-daa763148163.png)
+Enter a different city on events page
 ![image](https://user-images.githubusercontent.com/76980137/113413515-7ef4c700-9380-11eb-93a1-1fd38e890776.png)
 
 
