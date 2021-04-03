@@ -45,7 +45,7 @@ There was much help to build a working product. Credit goes to:
 
     5. API's - Tickemaster and openWeathermap
 
-Homepage
+Homepage - https://nancyrosas0.github.io/Seek/index.html
 
 SEEK
 Where will the night take you?
