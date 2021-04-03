@@ -1,3 +1,4 @@
+/* header */
 .header-div {
   position: relative;
   z-index: 1;
@@ -8,23 +9,16 @@
   opacity: 0.5;
   position: absolute;
   z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 100%;
   height: 100%;
 }
 
 header h1 {
   display: inline-block;
-  margin: 0;
   padding: 16px;
-  font-size: 22px;
 }
 
 header h1 a {
-  text-decoration: none;
   color: #f8de7e;
   font-weight: 900;
   font-family: "Train One", cursive;
@@ -36,14 +30,9 @@ header nav {
   float: right;
 }
 
-nav ul li {
-  display: inline;
-}
-
 nav ul li a {
   font-family: "Montserrat", sans-serif;
   display: inline-block;
-  text-decoration: none;
   color: #fff;
   font-size: 18px;
   margin: 8px;
@@ -54,33 +43,55 @@ nav ul li a:hover {
   color: #f8de7e;
 }
 
-.btn-search a {
-  border: #f8de7e 4px solid;
-  background-color: #f8de7e;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 14px;
-  color: #333;
+/* search button  */
+
+#btn-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
 }
 
-.btn-search a:hover {
-  border: #f6f4ac 4px solid;
+.input-centered {
+  text-align: center;
+}
 
-  color: #000;
+#events1 {
+  padding: 17px;
+  width: 50%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
   background-color: #f6f4ac;
+  opacity: 0.9;
+  text-align: center;
 }
 
-.card {
-  border-radius: 25px;
-  opacity: 0.7;
-  margin: 10x;
-  display: flex;
+#submit {
+  padding: 14px;
+  width: 200px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #f6f4ac;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 50px;
 }
+
+.btn-search {
+  text-align: center;
+}
+
+/* events main content */
+
 .events {
   display: flex;
   background: rgb(221, 215, 215);
-  width: 100%;
-  height: 100%;
 }
 
 .bg-events {
@@ -90,9 +101,55 @@ nav ul li a:hover {
   padding-top: 20px;
 }
 
-#cards {
-  height: fit-content;
+.card {
+  border-radius: 25px;
+  opacity: 0.7;
+  /* margin: 10x; */
+  display: flex;
+}
+
+.events-line {
+  display: none;
+}
+
+.events-card-1 {
   flex-basis: 75%;
+}
+
+.events-card-2 {
+  flex-basis: 25%;
+  padding: 25px;
+  text-align: center;
+}
+
+.title.is-4 {
+  margin: 0;
+  font-size: 35px;
+}
+
+.fa-twitter:before,
+.fa-facebook:before {
+  font-size: 25px;
+}
+
+/* weather card */
+
+.temp,
+.humidity {
+  font-size: 18px;
+  line-height: 2.5;
+}
+
+#weather {
+  height: 100vh;
+  flex-basis: 25%;
+  margin: 5px 0 25px 25px;
+}
+
+.temp i,
+.humidity i,
+.cityName {
+  color: #f9a602;
 }
 
 .column.is-full {
@@ -102,24 +159,6 @@ nav ul li a:hover {
 .weather-card {
   position: fixed;
   width: 22%;
-}
-
-.test1 {
-  /* border: black 2px solid; */
-  flex-basis: 75%;
-}
-
-.test2 {
-  /* border: black 2px solid; */
-  flex-basis: 25%;
-  padding: 25px;
-  text-align: center;
-}
-
-.title.is-4 {
-  margin: 0;
-  font-size: 35px;
-  /* margin-bottom: 15px; */
 }
 
 .content {
@@ -132,76 +171,4 @@ nav ul li a:hover {
 
 .columns:not(:last-child) {
   margin-bottom: 0;
-}
-.temp,
-.humidity {
-  font-size: 18px;
-  line-height: 2.5;
-}
-#weather {
-  height: 100vh;
-  flex-basis: 25%;
-  margin: 5px 0 25px 25px;
-}
-
-.weather-box {
-  height: 100%;
-  width: 100%;
-}
-
-.temp i,
-.humidity i,
-.cityName {
-  color: #f9a602;
-}
-
-.fa-twitter:before,
-.fa-facebook:before {
-  font-size: 25px;
-}
-#events1 {
-  padding: 17px;
-  width: 50%;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  outline: none;
-  border: none;
-  background-color: #f6f4ac;
-  opacity: 0.9;
-  text-align: center;
-}
-.input-centered {
-  text-align: center;
-}
-
-#submit {
-  padding: 14px;
-  width: 200px;
-  border-radius: 15px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background-color: #f6f4ac;
-  color: black;
-  font-size: 16px;
-  font-weight: 500;
-  opacity: 0.9;
-  margin-bottom: 50px;
-}
-
-.btn-search {
-  text-align: center;
-}
-
-#btn-text {
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.events-line {
-  display: none;
 }

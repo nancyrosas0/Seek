@@ -1,3 +1,5 @@
+// global variables
+
 var apiKey = "3ac0d8db34de82819d13a9167239acc1";
 var searchBtn = $(".searchBtn");
 var searchInput = $(".storageInput");
@@ -9,13 +11,13 @@ var tempEl = $(".temp");
 var humidityEl = $(".humidity");
 var today = moment().format("L");
 
+// on click event for event button search
 searchBtn.on("click", function (e) {
   e.preventDefault();
   if (searchInput.val() === "") {
     swal("Please enter a valid city before proceeding");
     return;
   }
-
   getWeather(searchInput.val());
 });
 

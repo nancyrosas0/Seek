@@ -17,7 +17,7 @@ $(document).ready(function () {
   }
   isEventsPage();
 
-  // add on click event for event button search
+  // on click event for event button search
 
   $("#submit-hp").on("click", function (e) {
     e.preventDefault();
@@ -25,7 +25,7 @@ $(document).ready(function () {
       swal("Please enter a valid city before proceeding");
       return false;
     }
-
+    // set local storage
     localStorage.setItem(
       "homepage-city",
       JSON.stringify($("#events").val().trim().toLowerCase())
@@ -36,7 +36,6 @@ $(document).ready(function () {
 
   $("#submit").on("click", function () {
     var city = $("#events1").val();
-    //   $("#submit").load("events.html");
     $("#cards").empty();
 
     apiCall(city);
@@ -59,7 +58,7 @@ $(document).ready(function () {
           return;
         }
 
-        // for loop through 5 events per time
+        // for loop through 20 events per time
         var events = json._embedded.events;
         for (var i = 0; i < events.length; i++) {
           // create cards dynamically
@@ -68,7 +67,7 @@ $(document).ready(function () {
             <div class="column is-full">
               <div class="card">
               
-              <section class="test1">
+              <section class="events-card-1">
                 <div class="card-content">
                   <div class="media">
                     <div class="media-left">
@@ -98,7 +97,7 @@ $(document).ready(function () {
 
                     </section>
     
-                    <section class="test2">
+                    <section class="events-card-2">
                     <p>
                     <hr class="events-line" style="height:2px; width:75%; margin: 16px auto; border-width:0; background-color: #f9a602">
 
@@ -139,6 +138,7 @@ $(document).ready(function () {
   }
 });
 
+// function to load social media only if provided
 function getTwitter(json, i) {
   if (
     json?._embedded.events[i]?._embedded?.attractions?.[0]?.externalLinks

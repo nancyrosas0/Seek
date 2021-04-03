@@ -1,35 +1,53 @@
+/* homepage styling */
+
+/* font-family */
 @font-face {
   font-family: "blackangel";
   src: url("../fonts/blackangelotf.otf") format("opentype"),
     url("../fonts/blackangelttf.ttf") format("truetype");
 }
 
+/* reset settings */
+
 * {
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: rgb(164, 167, 162);
 }
+
 .back-img {
-  background-position: 100px 5px;
-  padding: 0 0 0 0;
-  height: 100%;
-  width: 100%;
   opacity: 0.5;
 }
+
 .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Train One", cursive;
-  font-size: 50px;
   font-weight: bold;
   color: whitesmoke;
   text-shadow: black 1px 1px;
   width: 100%;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 90px;
+  color: #f8de7e;
+  font-weight: 900;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: "blackangel", sans-serif;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 10px;
 }
 
 #city-text {
@@ -59,26 +77,9 @@ body {
   border: none;
   cursor: pointer;
   background-color: #f6f4ac;
-  color: black;
   font-size: 16px;
   font-weight: 500;
   opacity: 0.9;
-}
-
-.main-title {
-  text-align: center;
-  font-size: 90px;
-  color: #f8de7e;
-  font-weight: 900;
-}
-
-.subtitle {
-  text-align: center;
-  font-family: "blackangel", sans-serif;
-  font-weight: 590;
-  color: white;
-  font-size: 60px;
-  margin-bottom: 10px;
 }
 
 .subtitle a {
@@ -96,10 +97,12 @@ body {
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
 
+/* footer */
 footer {
   background-color: #000;
   color: #fff;
@@ -107,6 +110,7 @@ footer {
   text-align: center;
 }
 
+/* popup message */
 .swal-overlay {
   background-color: rgba(250, 247, 201, 0.2);
 }
